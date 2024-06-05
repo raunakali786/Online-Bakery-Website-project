@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Billing System</title>
+    <link rel="stylesheet" href="bill.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <script src="bill.js"></script>
+    <div class="container">
+        <h1><i class="fas fa-receipt"></i> Restaurant Billing System</h1>
+        <form id="billingForm">
+            <div class="menu-item">
+                <input type="checkbox" id="item1" name="item" value="10">
+                <label for="item1"><i class="fas fa-hamburger"></i> Burger ($10)</label>
+            </div>
+            <div class="menu-item">
+                <input type="checkbox" id="item2" name="item" value="15">
+                <label for="item2"><i class="fas fa-pizza-slice"></i> Pizza ($15)</label>
+            </div>
+            <div class="menu-item">
+                <input type="checkbox" id="item3" name="item" value="7">
+                <label for="item3"><i class="fas fa-drumstick-bite"></i> Chicken ($7)</label>
+            </div>
+            <div class="menu-item">
+                <input type="checkbox" id="item4" name="item" value="5">
+                <label for="item4"><i class="fas fa-coffee"></i> Drink ($5)</label>
+            </div>
+            <div class="total">
+                <label for="total"><i class="fas fa-dollar-sign"></i> Total: $</label>
+                <input type="text" id="total" name="total" readonly>
+            </div>
+        </form>
+        <button type="button" onclick="calculateTotal()"><i class="fas fa-calculator"></i> Calculate Total</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
